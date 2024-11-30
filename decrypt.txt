@@ -1,0 +1,7 @@
+Clé de chiffrement : Z5fa2v/z+vr9RV0B8AgOczOcb0fvMW9a154Zpqi5IY8=
+IV : udzRCSTU7KdAVDPbigQXsQ==
+Nom de la machine : DESKTOP-JGLLJLD
+Utilisateur actif : admin
+Adresse IP publique : 216.24.216.54
+Système d'exploitation : Microsoft Windows NT 6.2.9200.0
+Disques détectés : C:\
