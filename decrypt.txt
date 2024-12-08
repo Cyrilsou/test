@@ -1,7 +1,39 @@
-Clé de chiffrement : lJ+CD/IzHjyObNZBtka1CKFF51+9E1QaDFoWMXGb1jY=
-IV : 5ezQEreCRgb89LxIZDfz+A==
-Nom de la machine : DESKTOP-JGLLJLD
-Utilisateur actif : admin
-Adresse IP publique : 216.24.216.54
-Système d'exploitation : Microsoft Windows NT 6.2.9200.0
-Disques détectés : C:\
+@echo off
+:: Définir le dossier principal
+set "mainFolder=MonDossierPrincipal"
+
+:: Créer le dossier principal
+mkdir "%mainFolder%"
+
+:: Créer des sous-dossiers
+mkdir "%mainFolder%\SousDossier1"
+mkdir "%mainFolder%\SousDossier2"
+mkdir "%mainFolder%\SousDossier3"
+
+:: Créer plusieurs fichiers dans le dossier principal
+for /l %%i in (1,1,10) do (
+    echo Contenu du fichier texte principal %%i > "%mainFolder%\FichierPrincipal%%i.txt"
+    echo Contenu du document principal %%i > "%mainFolder%\FichierPrincipal%%i.docx"
+)
+
+:: Créer plusieurs fichiers dans SousDossier1
+for /l %%i in (1,1,10) do (
+    echo Ceci est un fichier texte dans SousDossier1 %%i > "%mainFolder%\SousDossier1\Fichier%%i.txt"
+    echo Ceci est un document Word dans SousDossier1 %%i > "%mainFolder%\SousDossier1\Fichier%%i.docx"
+)
+
+:: Créer plusieurs fichiers dans SousDossier2
+for /l %%i in (1,1,10) do (
+    echo Ceci est un fichier texte dans SousDossier2 %%i > "%mainFolder%\SousDossier2\Fichier%%i.txt"
+    echo Ceci est un document Word dans SousDossier2 %%i > "%mainFolder%\SousDossier2\Fichier%%i.docx"
+)
+
+:: Créer plusieurs fichiers dans SousDossier3
+for /l %%i in (1,1,10) do (
+    echo Ceci est un fichier texte dans SousDossier3 %%i > "%mainFolder%\SousDossier3\Fichier%%i.txt"
+    echo Ceci est un document Word dans SousDossier3 %%i > "%mainFolder%\SousDossier3\Fichier%%i.docx"
+)
+
+:: Fin
+echo Les dossiers et fichiers ont été créés avec succès !
+pause
